@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/restaurant.png">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="/css/user.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <script defer src="js/user.js"></script>
+</head>
+<body>
+    <!-- BARRA SUPERIOR -->
+    <div class="superior">
+        <img src="img/boy.png">
+        <h5>Bienvenido <span id="user"> </span></h5>
+        <p class="slogan">Ordene lo que su hambre desee =D</p>
+        <button onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+
+    <div class="page">
+        <div class="productos">
+
+        </div>
+    
+        <div class="carrito"> <br>
+            <h3>Carrito de compras</h3> <br>
+            <h3>Total: <h3 id="total"> </h3></h3> <br>
+            <button class="compra" id="comprar" onclick="comprar()">Realizar compra</button> <br><br>
+            <p style="text-align: center;"> Unico método de pago: Efectivo</p>
+            <div class="carrito-platillos">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
