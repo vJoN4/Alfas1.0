@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurante</title>
+    <link rel="icon" href="img/restaurant.png">
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <script defer src="js/restaurant.js"></script>
+</head>
+<body>
+    <!-- BARRA SUPERIOR -->
+    <div class="superior">
+        <img src="img/baker.png">
+        <h5>Bienvenido <span id="restaurant"> </span></h5>
+        <p class="slogan">Comienza a ofertar tu restaurante =D</p>
+        <button onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+
+    <!-- CONTENEDOR -->
+    <div class="page">
+        <!-- ESPACIO PARA INTRODUCIR PLATILLOS -->
+            <div class="comida">
+                <div class="form-platillos">
+                        <br><br>
+                        <h2>Empecemos subiendo tus platillos aqui!</h2> <br><br>
+                        <input type="text" placeholder="Nombre del platillo" id="nombre_platillo"> <br><br><br>
+                        <textarea id="des_platillo" cols="30" rows="10" placeholder="Descripción"></textarea> <br><br>
+                        <input type="number" id="precio_platillo" placeholder="Precio"> <br><br><br>
+                        <button onclick="subirPlatillos()">Subir platillo</button>
+                </div>
+            </div>
+            
+            <!-- ESPACIO PARA VISUALIZAR PLATILLOS -->
+            <div class="platillos">   <br>
+                <h3>Platillos añadidos</h3> <br><br>
+                <div class="lista-platillos">
+
+                </div>               
+            </div>
+    </div>
+</body>
+</html>
