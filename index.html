@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/restaurant.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script defer src="js/functions.js"></script>
+    <title>HomePage</title>
+</head>
+<body>
+    <div class="image"></div>
+
+    <!-- ESPACIO DEL USUARIO -->
+    <div class="login">
+        <div class="space--user">
+            <div class="user">
+                <h2>La comida que desees, a tu alcance =D, solo requieres iniciar sesión: </h2>  
+                <div class="inputU">
+                    <input type="email" id="user_email" placeholder="correo@example.com"> <br> <br>
+                    <input type="password" id="user_password" placeholder="Contraseña"> <br><br>
+                    <button class="sesionUser" onclick="sessionUser()">Acceder</button> <br><br>
+                    <p>¿Aún no tienes una cuenta?, pues que esperas...</p> <br>
+                    <button id="openUser">Registrate!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ESPACIO DEL RESTAURANTE -->
+        <div class="space--restaurant">
+            <div class="restaurant">
+                <h2>Si tu restaurante es parte de nuestro equipo de trabajo, inicia sesión aquí!</h2>
+                <div class="inputR">
+                    <input type="email" id="res_email" placeholder="admin@example.com"> <br> <br>
+                    <input type="password" id="res_password" placeholder="Contraseña"> <br><br>
+                    <button class="sesionR" onclick="sessionRes()">Acceder</button> <br><br>
+                    <p>Si pertenecer a nuestra plataforma quieres, tu restaurante </p> <br>
+                    <button id="openRestaurant">Registrar aca debes!</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!-- REGISTRO DEL USUARIO -->
+    <div class="overlay" id="overlay">
+        <div class="popUser" id="popUser">
+            <a href="" id="btn-cerrar" class="btn-cerrar"><i class="fas fa-times"></i></a>
+            <h2 style="width: calc(100%/2); text-align: center; margin-left: calc(100%/4);">Registrate y comienza a pedir tus platillos favoritos</h2> <br><br>
+            <div class="user_R">
+                <input type="text" id="user_name" placeholder="Nombre"> <br><br>
+                <input type="email" id="user_reg_email" placeholder="correo@example.com"> <br><br>
+                <input type="password" id="user_reg_pass" placeholder="Contraseña"> <br><br>
+                <input type="password" id="user_reg_repass" placeholder="Confirmar contraseña"> <br><br>
+                <input type="text" id="user_reg_domicilio" placeholder="Domicilio"> <br><br><br>
+                <button onclick="user_reg()">Registrarse</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- REGISTRO DEL RESTAURANTE -->
+    <div class="overlay2" id="overlay2">
+        <div class="popRes" id="popRes">
+            <a href="" id="btn-cerrar2" class="btn-cerrar"><i class="fas fa-times"></i></a>
+            <h2 style="width: calc(100%/2); text-align: center; margin-left: calc(100%/4);">Registrate y comienza a recibir pedidos!</h2> <br><br>
+            <div class="res_R">
+                <input type="text" id="res_name" placeholder="Nombre del restaurant"> <br><br>
+                <input type="email" id="res_reg_email" placeholder="restaurant@example.com"> <br><br>
+                <input type="password" id="res_reg_pass" placeholder="Contraseña"> <br><br>
+                <input type="password" id="res_reg_repass" placeholder="Confirmar contraseña"> <br><br><br>
+                <button onclick="res_reg()">Registrarse</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
