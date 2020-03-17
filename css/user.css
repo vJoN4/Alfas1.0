@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRA SUPERIOR */
+.superior{
+    width: 100%;
+    height: calc(100%/60);
+    background-image: linear-gradient(rgba(240, 222, 182, 0.63), rgba(240, 222, 182, 0.63)), url(../img/food.jpg);
+    display: flex;
+}
+
+.superior img{
+    height: 39px;
+    margin-left: calc(1%/3);
+    padding-top: calc(1%/2);
+}
+
+.superior h5{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    font-size: 150%;
+    padding-top: calc(1%/1.2);
+}
+
+.slogan{
+    padding-top: 1%;
+    margin-left: calc(63%/2);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 115%;
+    text-align: center;
+}
+
+.superior button{
+    width: 7%;
+    margin-left: calc(100%/3.3);
+    margin-right: 2%;
+    border: none;
+    background: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 105%;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.superior button:hover{
+    background-color: #ffffff;
+    /*PARA QUE NO SEA TAN AGRESIVO*/
+    color: rgb(240, 23, 23);
+    border:solid 0.5px rgba(196, 194, 191, 0.938);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.page{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg,rgba(255, 214, 152, 0.3),rgba(255, 255, 255, 0.6)),url(../img/user_back.jpg);
+    background-size: cover;
+}
+
+/* PRODUCTOS */
+.productos{
+    position: fixed;
+    height: 100%;
+    width: 65%;
+    margin-right: 35%;
+    border-right: solid rgb(145, 142, 142);
+}
+
+/* PRODUCTOS - PLATILLOS */
+.plat1llo, .plat1llo2{
+    font-family: 'Comfortaa', cursive;
+    border: solid 1px;
+    /* ALINEAR EN LINEA */
+    display: inline-block;
+    position: relative;
+    font-size: 85%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 2%;
+    background-image: linear-gradient(rgba(248, 187, 54, 0.918), rgba(250, 224, 75, 0.918));
+    width: calc(100%/2.75);
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #666;        /* Sombra normal */
+}
+
+.plat1llo p, .plat1llo2 p{
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.plat1llo button, .plat1llo2 button{
+    font-family: 'Comfortaa', cursive;
+    border:none;
+    border-radius: 100px 100px 100px 100px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #000000;
+    font-size: 95%;
+    font-family: 'Comfortaa', cursive;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.plat1llo button:hover, .plat1llo2 button:hover{
+    background-color: #ffffff;
+    /*PARA QUE NO SEA TAN AGRESIVO*/
+    color: rgba(255, 40, 40, 0.63);
+    border:solid 0.5px rgba(196, 194, 191, 0.938);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.plat1llo button:focus, .plat1llo2 button:focus{
+    outline:0;
+}
+
+/* "CARRITO" */
+.carrito{
+    position: fixed;
+    height: 100%;
+    width: 35%;
+    margin-left: 65%;
+    font-family: 'Comfortaa', cursive;
+    overflow: scroll;
+}
+
+.carrito h3{
+    text-align: center;
+}
+
+.carrito button{
+    display: none;
+}
+
+.carrito .newBoton{
+    display: inline;
+}
+
+
+.carrito .compra{
+    display: inline;
+    margin-left: calc(100%/3.257);
+    font-family: 'Comfortaa', cursive;
+    /* border:none; */
+    border:solid 0.5px rgba(196, 194, 191, 0.938);
+    border-radius: 100px 100px 100px 100px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #000000;
+    font-size: 95%;
+    font-family: 'Comfortaa', cursive;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.carrito .compra:hover{
+    background-color: #ffffff;
+    /*PARA QUE NO SEA TAN AGRESIVO*/
+    color: rgba(255, 40, 40, 0.63);
+    border:solid 0.5px rgba(196, 194, 191, 0.938);
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.carrito .compra:focus{
+    outline:0;
+}
+
+.carrito-platillos{
+    width: calc(100%/1.2);
+    margin-left: calc(100%/8);
+}
